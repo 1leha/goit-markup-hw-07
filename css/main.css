@@ -1,0 +1,97 @@
+@charset "UTF-8";
+:root {
+  /* Переменные основных цветов */
+  --color-brand: #2196f3;
+  --color-primary: #212121;
+  --color-secondary: #757575;
+  --color-third: #f5f4fa;
+  --color-fourth: #2f303a;
+  --color-cards-portfolio: #eee;
+  --color-white: #ffffff;
+  --color-white60: rgba(250, 255, 255, 0.6);
+  --color-white10: rgba(250, 255, 255, 0.1);
+  --color-overlay: rgba(47, 48, 58, 0.4);
+  --color-card-overlay: rgba(33, 150, 243, 0.9);
+  --color-current: currentColor;
+  --color-inactive-icon: #afb1b8;
+  --color-bg-specialization: rgba(47, 48, 58, 0.8);
+  --color-input-outline: rgba(0, 0, 0, 0.1);
+  --color-modal-overlay: rgba(0, 0, 0, 0.2);
+  /* Переменные цветов активности */
+  --color-active: #2196f3;
+  --color-active-button: #188ce8;
+  /* Шрифты */
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  /* ЭФФЕКТЫ */
+  --transition-time: 250ms;
+  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Тень для кнопок */
+  --button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Стиль для скрытых заголовков */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+/* Глобальные стили страницы */
+body {
+  font-family: var(--primary-font);
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+button {
+  border: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Обнуляет подчеркивание ссылок */
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Обнуляет оформления списков */
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Обнуляет оформления заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/*# sourceMappingURL=main.css.map */

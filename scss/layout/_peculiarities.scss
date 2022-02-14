@@ -1,0 +1,47 @@
+/* *Стили для "Особенности" */
+.peculiarities {
+  padding-bottom: 0px;
+}
+
+.peculiarities-list {
+  display: flex;
+}
+
+.peculiarities-item {
+  flex-basis: 270px;
+}
+
+.peculiarities-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.peculiarities-thumb {
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-third);
+
+  border-radius: 4px;
+}
+
+.peculiarities-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.peculiarities-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--color-secondary);
+}

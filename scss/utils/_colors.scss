@@ -1,0 +1,24 @@
+$colors: (
+	"brand": #2196f3,
+	"primary": #212121,
+	"secondary": #757575,
+	"third": #f5f4fa,
+	"fourth": #2f303a,
+	"cardsPortfolio": #eee,
+	"white": #ffffff,
+	"white60": rgba(250, 255, 255, 0.6),
+	"white10": rgba(250, 255, 255, 0.1),
+	"overlay": rgba(47, 48, 58, 0.4),
+	"cardOverlay": rgba(33, 150, 243, 0.9),
+	"current": currentColor,
+	"inactiveIcon": #afb1b8,
+	"bgSpecialization": rgba(47, 48, 58, 0.8),
+	"inputOutline": rgba(0, 0, 0, 0.1),
+	"modalOverlay": rgba(0, 0, 0, 0.2),
+	"active": #2196f3,
+	"activeButton": #188ce8,
+);
+
+@function getColor($key) {
+	@return map-get($colors, $key);
+}

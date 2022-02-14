@@ -1,0 +1,29 @@
+
+/* *Стили для кнопок */
+.button {
+  min-width: 73px;
+  padding: 6px 22px;
+
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  background-color: var(--color-third);
+  color: var(--color-primary);
+
+  border-radius: 4px;
+
+  transition-property: color, background, box-shadow;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
+}
+/* События кнопок */
+.button:hover,
+.button:focus {
+  color: var(--color-white);
+  background-color: var(--color-active);
+
+  box-shadow: var(--button-shadow);
+}

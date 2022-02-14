@@ -1,0 +1,16 @@
+/* *Стили для логотипа */
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-top: 25px;
+
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--color-primary);
+}
+.logo-blue {
+  color: var(--color-brand);
+}
