@@ -7,27 +7,22 @@ body {
 }
 
 button {
-  border: none;
+  @extend %buttons;
 }
 
 p {
-  margin: 0;
-  padding: 0;
+  @extend %paragraph;
 }
 
 /* Обнуляет подчеркивание ссылок */
 a {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
+  @extend %links;
 }
 
 /* Обнуляет оформления списков */
 ul,
 li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @extend %lists;
 }
 
 /* Обнуляет оформления заголовков */
@@ -37,11 +32,9 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  @extend %headers;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  @extend %images;
 }
