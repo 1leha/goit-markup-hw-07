@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -29,7 +29,7 @@
   color: var(--color-white);
 }
 
-.hero-button {
+.hero__button {
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
@@ -42,15 +42,14 @@
   background-color: var(--color-brand);
   color: var(--color-white);
 
-  border-radius: 4px;
 
   transition-property: color, background;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-function);
-}
 
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--color-active-button);
-  color: var(--color-white);
+  &:hover,
+  &:focus {
+    background-color: var(--color-active-button);
+    color: var(--color-white);
+  }
 }

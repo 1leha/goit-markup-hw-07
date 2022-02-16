@@ -155,11 +155,10 @@ button {
           transition-duration: var(--transition-time);
   -webkit-transition-timing-function: var(--transition-function);
           transition-timing-function: var(--transition-function);
+  /* События кнопок */
 }
 
-/* События кнопок */
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   color: var(--color-white);
   background-color: var(--color-active);
   -webkit-box-shadow: var(--button-shadow);
@@ -690,7 +689,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -701,7 +700,7 @@ body {
   color: var(--color-white);
 }
 
-.hero-button {
+.hero__button {
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
@@ -711,7 +710,6 @@ body {
   text-align: center;
   background-color: var(--color-brand);
   color: var(--color-white);
-  border-radius: 4px;
   -webkit-transition-property: color, background;
   transition-property: color, background;
   -webkit-transition-duration: var(--transition-time);
@@ -720,8 +718,7 @@ body {
           transition-timing-function: var(--transition-function);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: var(--color-active-button);
   color: var(--color-white);
 }
@@ -731,10 +728,15 @@ body {
   padding-bottom: 0px;
 }
 
-.peculiarities-list {
+.peculiarities__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .peculiarities-item {
