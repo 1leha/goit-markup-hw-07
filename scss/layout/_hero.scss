@@ -42,10 +42,7 @@
   background-color: var(--color-brand);
   color: var(--color-white);
 
-
-  transition-property: color, background;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--transition-function);
+  @include projTransitions((color, background));
 
   &:hover,
   &:focus {

@@ -1,9 +1,7 @@
 .header {
   border-bottom: 1px solid #ececec;
-  //   .container {
-  //     @include flexAlign();
-  //   }
 }
+
 .header__item {
   @include flexAlign();
 }
@@ -40,9 +38,7 @@
 
   color: var(--color-secondary);
 
-  transition-property: color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--transition-function);
+  @include projTransitions(color);
 
   /* События контактов */
   &:hover,
@@ -56,8 +52,3 @@
   width: 16px;
   height: 16px;
 }
-
-/* 
-.email-icon {
-  margin-right: 10px;
-} */

@@ -287,10 +287,6 @@ button {
   margin-right: 8px;
 }
 
-.filter__label {
-  display: inline-block;
-}
-
 .filter-label__radio-custom {
   display: block;
   height: 38px;
@@ -547,12 +543,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -568,13 +564,13 @@ button {
 .checkbox__link {
   height: 100%;
   padding: auto;
-  cursor: pointer;
   text-decoration: none;
   color: var(--color-active);
   text-decoration: underline;
 }
 
 .checkbox__custom {
+  cursor: pointer;
   display: inline-block;
   margin-right: 8px;
   border: 2px solid var(--color-primary);
@@ -720,10 +716,6 @@ body {
   height: 16px;
 }
 
-/* 
-.email-icon {
-  margin-right: 10px;
-} */
 /* *Стили для Героя */
 .hero {
   margin-left: auto;
@@ -806,12 +798,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: var(--color-third);
   border-radius: 4px;
 }
@@ -866,12 +858,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.33;
@@ -900,10 +892,6 @@ body {
           justify-content: center;
 }
 
-/* .our-team .wrapper {
-  justify-content: center;
-  align-items: center;
-} */
 .our-team__item {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
       flex-basis: calc((100% - 90px) / 4);
@@ -961,12 +949,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 170px;
   height: 92px;
   color: var(--color-inactive-icon);
@@ -1126,7 +1114,6 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--color-fourth);
   border: none;
-  /* border: solid 1px rgba(255, 255, 255, 0.6); */
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   outline: solid 1px rgba(255, 255, 255, 0.6);

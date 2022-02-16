@@ -19,9 +19,7 @@
 
   color: var(--color-primary);
 
-  transition-property: color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--transition-function);
+  @include projTransitions(color);
 
   &:hover,
   &:focus {

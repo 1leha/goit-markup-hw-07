@@ -8,10 +8,6 @@
 .our-team__list {
   @include flexAlign();
 }
-/* .our-team .wrapper {
-  justify-content: center;
-  align-items: center;
-} */
 
 .our-team__item {
   flex-basis: calc((100% - 90px) / 4);
@@ -52,7 +48,3 @@
 
   color: var(--color-secondary);
 }
-
-// .our-team__social {
-//   @include flexAlign();
-// }

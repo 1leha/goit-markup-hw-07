@@ -19,10 +19,9 @@
   height: 70px;
   bottom: 0;
   left: 0;
+  
+  @include flexAlign();
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   font-weight: 700;
   font-size: 14px;

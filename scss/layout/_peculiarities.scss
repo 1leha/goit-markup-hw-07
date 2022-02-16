@@ -9,6 +9,7 @@
 
 .peculiarities__item {
   flex-basis: 270px;
+
   &:not(:last-child) {
     margin-right: 30px;
   }
@@ -17,9 +18,7 @@
 .peculiarities__thumb {
   height: 120px;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexAlign();
 
   background-color: var(--color-third);
 
