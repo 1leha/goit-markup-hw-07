@@ -176,12 +176,30 @@ button {
           box-shadow: var(--button-shadow);
 }
 
-.card-content {
+.card {
+  display: block;
+  text-decoration: none;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-duration: var(--transition-time);
+          transition-duration: var(--transition-time);
+  -webkit-transition-timing-function: var(--transition-function);
+          transition-timing-function: var(--transition-function);
+}
+
+.card:hover, .card:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card__content {
   padding: 20px 24px;
   border: 1px solid var(--color-cards-portfolio);
 }
 
-.card-title {
+.card__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -191,7 +209,7 @@ button {
   color: var(--color-primary);
 }
 
-.card-description {
+.card__description {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -199,12 +217,12 @@ button {
 }
 
 /* Оверлей для карточек */
-.card-thumb {
+.card__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.card-overlay {
+.card__overlay {
   position: absolute;
   width: 100%;
   height: 294px;
@@ -217,6 +235,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   background-color: var(--color-card-overlay);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -231,22 +252,22 @@ button {
   overflow: hidden;
 }
 
-.card-overlay::-webkit-scrollbar {
+.card__link:hover .card__overlay,
+.card__link:focus .card__overlay {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.card__overlay::-webkit-scrollbar {
   width: 0;
 }
 
-.card-overlay-text {
+.card__text {
   width: 322px;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--color-white);
-}
-
-.portfolio-link:hover .card-overlay,
-.portfolio-link:focus .card-overlay {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
 }
 
 .filter__list {
@@ -966,38 +987,28 @@ body {
 
 /* *Стили для Портфолио
  */
-.wrapper.portfolio-cards {
+.portfolio__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.portfolio-cards-item {
+.portfolio__item {
   -ms-flex-preferred-size: calc(100% / 3 - 30px);
       flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   background-color: var(--color-white);
-}
-
-.portfolio-link {
-  display: block;
-  text-decoration: none;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
-  -webkit-transition-duration: var(--transition-time);
-          transition-duration: var(--transition-time);
-  -webkit-transition-timing-function: var(--transition-function);
-          transition-timing-function: var(--transition-function);
-}
-
-.portfolio-link:hover,
-.portfolio-link:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* *Стили для Футер */

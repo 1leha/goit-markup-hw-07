@@ -14,9 +14,7 @@
 
   border-radius: 4px;
 
-  transition-property: color, background, box-shadow;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--transition-function);
+  @include projTransitions((color, background, box-shadow));
 
   /* События кнопок */
   &:hover,
@@ -27,5 +25,3 @@
     box-shadow: var(--button-shadow);
   }
 }
-
-
