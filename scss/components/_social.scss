@@ -17,9 +17,11 @@
 
   border-radius: 50%;
 
-  transition-property: color, background;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--transition-function);
+  // transition-property: color, background;
+  // transition-duration: var(--transition-time);
+  // transition-timing-function: var(--transition-function);
+
+  @include projTransitions((background, color));
 
   &:hover,
   &:focus {

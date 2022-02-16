@@ -5,14 +5,16 @@
 @import './plaseholders/placeholders';
 
 @import './mixin/flexAlign';
+@import './mixin/transitions';
 
+@import './components/title';
 @import './components/menu';
 @import './components/button';
 @import './components/card';
+
 @import './components/filters';
 @import './components/logo';
 @import './components/social';
-@import './components/title';
 @import './components/modal';
 @import './components/form';
 
