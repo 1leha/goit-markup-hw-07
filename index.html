@@ -403,7 +403,7 @@
     </main>
 
     <!-- Модалка -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" aria-label="Закрыть модальное окно" data-modal-close>
           <svg width="11" height="11">
@@ -477,29 +477,27 @@
     <!-- Футер -->
     <footer class="footer">
       <!-- Контейнер для контента -->
-      <div class="container footer-container">
-        <div class="footer-container-item footer-container-adress">
+      <div class="container footer__container">
+        <div class="footer__adress">
           <a class="footer__logo logo" href="./index.html"
             ><span class="logo--blue">Web</span>Studio</a
           >
-          <address class="footer-address">
-            <ul class="contacts">
-              <li class="footer-contacts-item">
-                <p class="footer-location">г. Киев, пр-т Леси Украинки, 26</p>
+          <address class="address">
+            <ul class="contacts address__list">
+              <li class="adress__item">
+                <p class="adress__location">г. Киев, пр-т Леси Украинки, 26</p>
               </li>
-              <li class="footer-contacts-item">
-                <a class="email address-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="adress__item">
+                <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="contacts-item">
-                <a class="phone address-link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="adress__item">
+                <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
 
-        <div class="footer-container-item footer-container-social">
+        <div class="footer-container-social">
           <h2 class="footer-title title"><strong>присоединяйтесь</strong></h2>
 
           <ul class="footer-social-list">
@@ -534,7 +532,7 @@
           </ul>
         </div>
 
-        <div class="footer-container-item footer-container-subscription">
+        <div class="footer__subscription">
           <h2 class="footer-title title"><strong>Подпишитесь на рассылку</strong></h2>
           <form class="footer-form" name="footer-form">
             <input

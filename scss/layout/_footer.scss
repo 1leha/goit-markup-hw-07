@@ -1,4 +1,3 @@
-
 /* *Стили для Футер */
 .footer {
   padding-top: 60px;
@@ -6,11 +5,19 @@
 
   background-color: var(--color-fourth);
 }
-.footer-logo {
+
+.footer__container {
+  // display: flex;
+  // align-items: baseline;
+
+  @include flexAlign($align: baseline);
+}
+
+.footer__logo {
   color: var(--color-white);
   padding: 0;
 }
-.footer-address {
+.address {
   margin-top: 20px;
 
   font-style: normal;
@@ -20,27 +27,37 @@
 
   color: var(--color-white);
 }
-.footer-contacts-item:not(:last-child) {
-  margin-bottom: 9px;
+.adress__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
-.address-link {
+.address__link {
   padding-top: 0;
   padding-bottom: 0;
 
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  color: var(--color-secondary);
+
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
+
+  &:hover,
+  &:focus {
+    color: var(--color-active);
+  }
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-container-item:last-child {
+.footer__subscription {
   margin-left: auto;
 }
 
-.footer-container-adress {
+.footer__adress {
   margin-right: 70px;
 }
 
