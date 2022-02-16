@@ -249,25 +249,45 @@ button {
           transform: translateY(0%);
 }
 
-.wrapper.buttons-list {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 50px;
 }
 
-.buttons-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.wrapper.portfolio-cards {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+.filter__label {
+  display: inline-block;
+}
+
+.filter-label__radio-custom {
+  display: block;
+  height: 38px;
+  padding: 6px 22px;
+  line-height: 26px;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: var(--transition-time);
+          transition-duration: var(--transition-time);
+  -webkit-transition-timing-function: var(--transition-function);
+          transition-timing-function: var(--transition-function);
+}
+
+.filter-label__radio-original:checked + .filter-label__radio-custom {
+  color: var(--color-white);
+  background-color: var(--color-active);
+  -webkit-box-shadow: var(--button-shadow);
+          box-shadow: var(--button-shadow);
 }
 
 /* *Стили для логотипа */
@@ -946,6 +966,13 @@ body {
 
 /* *Стили для Портфолио
  */
+.wrapper.portfolio-cards {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
 .portfolio-cards-item {
   -ms-flex-preferred-size: calc(100% / 3 - 30px);
       flex-basis: calc(100% / 3 - 30px);

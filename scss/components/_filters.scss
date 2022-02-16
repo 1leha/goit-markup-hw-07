@@ -1,16 +1,34 @@
+.filter__list {
+  @include flexAlign();
 
-.wrapper.buttons-list {
-  justify-content: center;
-  align-items: center;
   margin-bottom: 50px;
 }
 
-.buttons-item:not(:last-child) {
+// buttons-list {
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.wrapper.portfolio-cards {
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+.filter__label {
+  display: inline-block;
+}
+
+.filter-label__radio-custom {
+  display: block;
+
+  height: 38px;
+  padding: 6px 22px;
+  line-height: 26px;
+
+  @include projTransitions((color, background-color));
+
+  .filter-label__radio-original:checked + & {
+    color: var(--color-white);
+    background-color: var(--color-active);
+    box-shadow: var(--button-shadow);
+  }
 }

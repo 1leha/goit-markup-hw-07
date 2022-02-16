@@ -73,13 +73,68 @@
           <!-- Cкрытый заголовок -->
           <h1 class="title visually-hidden">Портфолио</h1>
           <!-- Блок кнопок-фильтров -->
-          <ul class="buttons-list wrapper">
-            <li class="buttons-item"><button class="button" type="button">Все</button></li>
-            <li class="buttons-item"><button class="button" type="button">Веб-сайты</button></li>
-            <li class="buttons-item"><button class="button" type="button">Приложения</button></li>
-            <li class="buttons-item"><button class="button" type="button">Дизайн</button></li>
-            <li class="buttons-item"><button class="button" type="button">Маркетинг</button></li>
+          <ul class="portfolio__filter filter__list">
+            <li class="filter__item">
+              <label class="filter__label filter-label">
+                <input
+                  class="filter-label__radio-original visually-hidden"
+                  type="radio"
+                  name="filter"
+                  aria-label="Все"
+                />
+                <span class="filter-label__radio-custom button">Все</span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="filter__label filter-label">
+                <input
+                  class="filter-label__radio-original visually-hidden"
+                  type="radio"
+                  name="filter"
+                  aria-label="Веб-сайты"
+                />
+                <span class="filter-label__radio-custom button">Веб-сайты</span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="filter__label filter-label">
+                <input
+                  class="filter-label__radio-original visually-hidden"
+                  type="radio"
+                  name="filter"
+                  aria-label="Приложения"
+                />
+                <span class="filter-label__radio-custom button">Приложения</span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="filter__label filter-label">
+                <input
+                  class="filter-label__radio-original visually-hidden"
+                  type="radio"
+                  name="filter"
+                  aria-label="Дизайн"
+                />
+                <span class="filter-label__radio-custom button">Дизайн</span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="filter__label filter-label">
+                <input
+                  class="filter-label__radio-original visually-hidden"
+                  type="radio"
+                  name="filter"
+                  aria-label="Маркетинг"
+                />
+                <span class="filter-label__radio-custom button">Маркетинг</span>
+              </label>
+            </li>
           </ul>
+
           <ul class="portfolio-cards wrapper">
             <li class="portfolio-cards-item">
               <a href="" class="portfolio-link">

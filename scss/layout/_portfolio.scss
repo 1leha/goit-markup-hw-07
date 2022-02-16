@@ -1,5 +1,10 @@
 /* *Стили для Портфолио
  */
+.wrapper.portfolio-cards {
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
 
 .portfolio-cards-item {
   flex-basis: calc(100% / 3 - 30px);
