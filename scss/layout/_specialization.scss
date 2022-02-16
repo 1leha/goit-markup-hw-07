@@ -1,20 +1,19 @@
 /* Стили для "Чем мы занимаемся"
  */
+.specialization__list {
+  @include flexAlign();
+}
 
-/* .specialization .wrapper {
-  align-items: center;
-} */
-
-.specialization-item {
+.specialization__item {
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.specialization-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.specialization-text {
+.specialization__text {
   position: absolute;
   width: 100%;
   height: 70px;
