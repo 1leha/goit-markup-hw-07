@@ -1,11 +1,14 @@
-.social-item:not(:last-child) {
+.social {
+  @include flexAlign();
+}
+
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.social__link {
+  @include flexAlign();
+
   width: 44px;
   height: 44px;
 
@@ -17,10 +20,10 @@
   transition-property: color, background;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-function);
-}
 
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--color-active);
-  color: var(--color-white);
+  &:hover,
+  &:focus {
+    background-color: var(--color-active);
+    color: var(--color-white);
+  }
 }

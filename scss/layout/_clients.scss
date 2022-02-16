@@ -1,13 +1,13 @@
 /* Стили для секции Клиенты */
-.clients-list {
-  justify-content: center;
+.clients__list {
+  @include flexAlign();
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,10 +21,10 @@
   transition-property: color, border;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-function);
-}
 
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--color-active);
-  border: 1px solid var(--color-active);
+  &:hover,
+  &:focus {
+    color: var(--color-active);
+    border: 1px solid var(--color-active);
+  }
 }

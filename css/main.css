@@ -85,8 +85,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -273,20 +274,32 @@ button {
   color: var(--color-brand);
 }
 
-.social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-link {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 44px;
   height: 44px;
   background-color: transparent;
@@ -300,8 +313,7 @@ button {
           transition-timing-function: var(--transition-function);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--color-active);
   color: var(--color-white);
 }
@@ -366,7 +378,7 @@ button {
           transition-timing-function: var(--transition-function);
 }
 
-.modal-button {
+.close-button {
   cursor: pointer;
   position: absolute;
   width: 30px;
@@ -385,8 +397,7 @@ button {
           transition-timing-function: var(--transition-function);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.close-button:hover, .close-button:focus {
   color: var(--color-active);
 }
 
@@ -394,7 +405,7 @@ button {
   text-align: center;
 }
 
-.form-title {
+.form__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -403,21 +414,18 @@ button {
   letter-spacing: 0.03em;
 }
 
-.form-field {
+.form__field {
   display: block;
   width: 100%;
+  margin-bottom: 10px;
   position: relative;
 }
 
-.form-field {
-  margin-bottom: 10px;
-}
-
-.form-field-textarea {
+.form__textarea {
   margin-bottom: 20px;
 }
 
-.form-input-label {
+.form__label {
   margin-bottom: 4px;
   display: block;
   font-size: 12px;
@@ -427,7 +435,7 @@ button {
   color: var(--color-secondary);
 }
 
-.form-field-input {
+.form__input {
   display: block;
   width: 100%;
   padding-left: 42px;
@@ -448,7 +456,7 @@ button {
           transition-timing-function: var(--transition-function);
 }
 
-.form-field-input:focus {
+.form__input:focus {
   outline: 1px solid var(--color-active);
 }
 
@@ -476,7 +484,7 @@ button {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field-icon {
+.form__icon {
   display: block;
   position: absolute;
   top: 50%;
@@ -490,11 +498,11 @@ button {
   pointer-events: none;
 }
 
-.form-field-input:focus + .form-field-icon {
+.form__input:focus + .form__icon {
   color: var(--color-active);
 }
 
-.form-checkbox {
+.checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,7 +515,7 @@ button {
   margin-bottom: 30px;
 }
 
-.form-checkbox-label {
+.checkbox__label {
   cursor: pointer;
   font-size: 14px;
   line-height: 1.71;
@@ -516,7 +524,7 @@ button {
   color: var(--color-secondary);
 }
 
-.form-checkbox-link {
+.checkbox__link {
   height: 100%;
   padding: auto;
   cursor: pointer;
@@ -525,7 +533,7 @@ button {
   text-decoration: underline;
 }
 
-.form-checkbox-custom {
+.checkbox__custom {
   display: inline-block;
   margin-right: 8px;
   border: 2px solid var(--color-primary);
@@ -541,13 +549,13 @@ button {
           transition-timing-function: var(--transition-function);
 }
 
-.form-checkbox-original:checked + .form-checkbox-custom {
+.checkbox__original:checked + .checkbox__custom {
   color: var(--color-white);
   background-color: var(--color-brand);
   border: 2px solid var(--color-brand);
 }
 
-.form-button-send {
+.form__button-send {
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
@@ -561,8 +569,7 @@ button {
           box-shadow: var(--button-shadow);
 }
 
-.form-button-send:hover,
-.form-button-send:focus {
+.form__button-send:hover, .form__button-send:focus {
   background-color: var(--color-active-button);
 }
 
@@ -580,8 +587,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -607,8 +615,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -638,8 +647,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -732,8 +742,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -787,8 +798,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -835,16 +847,23 @@ body {
   background-color: var(--color-third);
 }
 
-.our-team .wrapper {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.our-team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.our-team-item {
+/* .our-team .wrapper {
+  justify-content: center;
+  align-items: center;
+} */
+.our-team__item {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
       flex-basis: calc((100% - 90px) / 4);
   background-color: var(--color-white);
@@ -853,16 +872,16 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-item:not(:last-child) {
+.our-team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-team-content {
+.our-team__content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.our-team-name {
+.our-team__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -871,7 +890,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.our-team-profession {
+.our-team__profession {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -880,27 +899,24 @@ body {
   color: var(--color-secondary);
 }
 
-.our-team-social {
+/* Стили для секции Клиенты */
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-/* Стили для секции Клиенты */
-.clients-list {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-link {
+.clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,8 +939,7 @@ body {
           transition-timing-function: var(--transition-function);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   color: var(--color-active);
   border: 1px solid var(--color-active);
 }

@@ -44,7 +44,7 @@
   transition-timing-function: var(--transition-function);
 }
 
-.modal-button {
+.close-button {
   cursor: pointer;
   position: absolute;
   width: 30px;
@@ -60,9 +60,9 @@
   transition-property: color;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-function);
-}
 
-.modal-button:hover,
-.modal-button:focus {
-  color: var(--color-active);
+  &:hover,
+  &:focus {
+    color: var(--color-active);
+  }
 }
