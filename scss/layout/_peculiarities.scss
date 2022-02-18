@@ -1,9 +1,5 @@
 /* *Стили для "Особенности" */
 .peculiarities {
-  padding-bottom: 0px;
-}
-
-.peculiarities__list {
   @include flexAlign();
 }
 

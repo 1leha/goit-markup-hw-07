@@ -1,6 +1,10 @@
 /* *Стили для Портфолио
  */
-.portfolio__cards {
+.portfolio__filter {
+  margin-bottom: 50px;
+}
+
+.portfolio {
   @include flexAlign(flex, none, none);
   // display: flex;
   flex-wrap: wrap;

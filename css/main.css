@@ -43,19 +43,6 @@
   clip: rect(0 0 0 0);
 }
 
-a {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 h1,
 h2,
 h3,
@@ -65,23 +52,13 @@ h6 {
   margin: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 p {
   margin: 0;
   padding: 0;
 }
 
-button {
-  border: none;
-}
-
 /* *Стили для заголовков */
-.title {
+.section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -252,8 +229,8 @@ button {
   overflow: hidden;
 }
 
-.card__link:hover .card__overlay,
-.card__link:focus .card__overlay {
+.card:hover .card__overlay,
+.card:focus .card__overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
@@ -270,7 +247,7 @@ button {
   color: var(--color-white);
 }
 
-.filter__list {
+.filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,7 +257,6 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
 }
 
 .filter__item:not(:last-child) {
@@ -317,7 +293,7 @@ button {
   color: var(--color-primary);
 }
 
-.logo--blue {
+.logo__color-part {
   color: var(--color-brand);
 }
 
@@ -617,9 +593,30 @@ body {
   color: var(--color-primary);
 }
 
+button {
+  border: none;
+}
+
 /* Обнуляет подчеркивание ссылок */
+a {
+  text-decoration: none;
+}
+
 /* Обнуляет оформления списков */
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Обнуляет оформления заголовков */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -637,6 +634,14 @@ body {
   padding-bottom: 94px;
 }
 
+.section--no-padding-bottom {
+  padding-bottom: 0px;
+}
+
+.section--colored-grey {
+  background-color: var(--color-third);
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -648,7 +653,43 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__header-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,10 +809,6 @@ body {
 
 /* *Стили для "Особенности" */
 .peculiarities {
-  padding-bottom: 0px;
-}
-
-.peculiarities__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,7 +864,7 @@ body {
 
 /* Стили для "Чем мы занимаемся"
  */
-.specialization__list {
+.specialization {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -877,10 +914,6 @@ body {
 /* *Стили для "Наша команда"
  */
 .our-team {
-  background-color: var(--color-third);
-}
-
-.our-team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -910,7 +943,7 @@ body {
   padding-bottom: 30px;
 }
 
-.our-team__name {
+.our-team__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -919,7 +952,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.our-team__profession {
+.our-team__text {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -929,7 +962,7 @@ body {
 }
 
 /* Стили для секции Клиенты */
-.clients__list {
+.clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,7 +1008,11 @@ body {
 
 /* *Стили для Портфолио
  */
-.portfolio__cards {
+.portfolio__filter {
+  margin-bottom: 50px;
+}
+
+.portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

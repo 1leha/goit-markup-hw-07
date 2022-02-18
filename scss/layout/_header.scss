@@ -2,7 +2,19 @@
   border-bottom: 1px solid #ececec;
 }
 
+.header__container {
+  @include flexAlign();
+}
+
 .header__item {
+  @include flexAlign();
+}
+
+.navigation {
+  @include flexAlign();
+}
+
+.header__header-contacts {
   @include flexAlign();
 }
 

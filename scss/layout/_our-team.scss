@@ -1,11 +1,9 @@
 /* *Стили для "Наша команда"
  */
 
-.our-team {
-  background-color: var(--color-third);
-}
 
-.our-team__list {
+
+.our-team {
   @include flexAlign();
 }
 
@@ -28,7 +26,7 @@
   padding-bottom: 30px;
 }
 
-.our-team__name {
+.our-team__title {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -38,7 +36,7 @@
   letter-spacing: 0.03em;
 }
 
-.our-team__profession {
+.our-team__text {
   margin-bottom: 16px;
 
   font-size: 16px;

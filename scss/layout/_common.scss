@@ -7,23 +7,25 @@ body {
 }
 
 button {
-  @extend %buttons;
+  border: none;
 }
 
 p {
-  @extend %paragraph;
+  @extend %  margin: 0;
+  padding: 0;;
 }
 
 /* Обнуляет подчеркивание ссылок */
 a {
-  @extend %links;
+  text-decoration: none;
 }
 
 /* Обнуляет оформления списков */
 ul,
 li {
-  @extend %lists;
-}
+  list-style-type: none;
+  margin: 0;
+  padding: 0;}
 
 /* Обнуляет оформления заголовков */
 h1,
@@ -32,9 +34,10 @@ h3,
 h4,
 h5,
 h6 {
-  @extend %headers;
+  margin: 0;
 }
 
 img {
-  @extend %images;
-}
+  display: block;
+  max-width: 100%;
+  height: auto;}

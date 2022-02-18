@@ -8,8 +8,8 @@
   letter-spacing: 0.03em;
 
   color: var(--color-primary);
+}
 
-  &--blue {
-    color: var(--color-brand);
-  }
+.logo__color-part {
+  color: var(--color-brand);
 }
